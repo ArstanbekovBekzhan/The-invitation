@@ -1,0 +1,68 @@
+.countdown-clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card {
+  width: 80px;
+  height: 120px;
+  perspective: 1000px;
+  margin: 0 10px;
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.flip-card-inner {
+  transform: rotateY(0deg);
+  animation: rotate 2.5s linear infinite;
+}
+
+@keyframes rotate  {
+from {
+  transform: rotateY(180deg);
+
+}
+
+to {
+  transform: rotateY(360deg);
+}
+}
+
+.flip-card-front,
+.flip-card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.flip-card-back {
+  background-color: #333;
+  color: #f2f2f2;
+  transform: rotateY(180deg);
+}
+
+.flip-card-value {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.flip-card-label {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}

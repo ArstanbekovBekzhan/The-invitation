@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+.section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.image img{
+    width: 100%;
+}
+.data {
+    color: #597824;
+    margin: 50px 0;
+}
+.text{
+    font-family: 'Poiret One', cursive;
+    font-size: 200%;
+    line-height: 130%;
+    width: 60%;
+    text-align: center;
+}
+.links{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 0;
+}
+a{
+    text-decoration: none;
+    color: #597824;
+    text-align: center;
+}
+a img{
+    width: 10vw;
+    animation: zoom 2s ease-in-out infinite;
+}
+.goodbye {
+    text-align: center;
+}
+.goodbye h4{
+    font-family: 'Poiret One', cursive;
+
+    font-size: 200%;
+    color: #BE7E4A;
+    margin: 40px 0;
+}
+.goodbye h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    font-weight: 100;
+    color: #597824;
+}
+
+
+@keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
